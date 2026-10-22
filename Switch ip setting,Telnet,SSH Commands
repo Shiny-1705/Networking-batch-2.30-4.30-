@@ -1,0 +1,24 @@
+Switch>enable
+Switch#show mac-address
+Switch#configure terminal
+Switch(config)#hostname shiny
+nivetha(config)#enable password 123
+nivetha(config)#exit
+nivetha#exit
+
+nivetha>enable
+Password: 
+nivetha#configure terminal
+nivetha(config)#interface vlan 1
+nivetha(config-if)#ip address 1.1.1.100 255.0.0.0
+nivetha(config-if)#no shutdown
+nivetha(config-if)#exit
+------------------telnet-------------------------
+nivetha(config)#username agnus secret abc
+nivetha(config)#line vty 0
+nivetha(config-line)#login local
+------- -----------ssh----------------
+gokul(config)#ip domain-name google.com
+gokul(config)#crypto key generate rsa
+range:360 to 2048
+gokul(config)#ip ssh version 2
